@@ -52,7 +52,7 @@ $(document).ready(function () {
 
         // Friday
         let friday = moment().day("fr")._d
-
+        
         // convert this into day of the year
         let fridayDate = moment(friday).dayOfYear();
 
