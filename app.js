@@ -90,4 +90,37 @@ $(document).ready(function () {
     setInterval(updateSeconds, 1000);
     setInterval(countdown, 1);
 
+
+    $('.saveBtn').on("click",function(){
+      console.log(this);
+    });
+
+  //Stores specific time into the hour containers
+
+  var nineHour =  $("#nine-hour").val("9");
+  var tenHour =  $("#ten-hour").val("10");
+  var elevenHour = $("#eleven-hour").val("11");
+  var twelveHour = $("#twelve-hour").val("12");
+  var oneHour = $("#one-hour").val("13"); 
+  var twoHour = $("#two-hour").val("14");
+  var threeHour = $("#three-hour").val("15");
+  var fourHour = $("#four-hour").val("16");
+  var fiveHour = $("#five-hour").val("17");
+  
+  let hourContainer = [
+    nineHour, tenHour, elevenHour, twelveHour,
+    oneHour, twoHour, threeHour, fourHour, fiveHour
+  ]
+
+  for(var i=0; i<=hourContainer.length; i++){
+    console.log(hourContainer[i].val());
+  }
+
+  var currentHour = moment().format("H");
+  console.log(currentHour);
+  
+  let containerColor = function(){
+
+   };
+
 })
