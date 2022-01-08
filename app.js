@@ -46,4 +46,12 @@ containerColor = function(){
   }
 };
 
+//Displays current Time
+var currentTime = function(){
+  document.getElementById("currentDay").innerHTML =
+  moment().format("MM/D/YYYY, h:m:ss");
+  } 
+setInterval(currentTime,1000);
+
+currentTime();
 containerColor();
