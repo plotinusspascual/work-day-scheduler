@@ -112,15 +112,25 @@ $(document).ready(function () {
     oneHour, twoHour, threeHour, fourHour, fiveHour
   ]
 
-  for(var i=0; i<=hourContainer.length; i++){
-    console.log(hourContainer[i].val());
-  }
+  //  for(var i=0; i<=hourContainer.length; i++){
+  //    console.log(hourContainer[i].val());
+  //  }
 
   var currentHour = moment().format("H");
   console.log(currentHour);
   
-  let containerColor = function(){
+  containerColor = function(){
+    for(var i=0; i<=hourContainer.length; i++){
+      if(hourContainer == currentHour){
+        hourContainer[i].addClass("present");
+      }else if(hourContainer > currentHour){
+        hourContainer[i].addClass("future")
+      }else{
+        hourContainer[i].addClass("past");
+      }
+    }
+  };
 
-   };
+  containerColor();
 
 })
