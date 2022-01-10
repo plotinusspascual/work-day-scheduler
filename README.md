@@ -34,7 +34,7 @@ How to view the project:
 
 Below is a gif showcasing some of the elements and functions of my website. 
 
-![alt text](assets/Work Day Scheduler.gif)
+![alt text](/assets/Work_Day_Scheduler.gif)
 
 
 
